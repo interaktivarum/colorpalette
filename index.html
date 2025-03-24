@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Färgpalett</title>
+
+    <!-- Importera Bootstrap v5.3.3 -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Importera Bootstrap icons v1.11.3 -->
+    <link href="css/bootstrap/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <!-- Importera Alpine -->
+    <script src="js/external/alpine.min.js" defer></script>
+
+    <!-- Importera Chroma: https://www.vis4.net/chromajs/ -->
+    <script src="js/external/chroma.min.cjs"></script>
+
+    <!-- Importera egen CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Egen JavaScript -->
+    <script src="js/colorGenerator.js"></script>
+</head>
+
+<!-- Använd 'data' för tillgång variabler och funktioner i colorGenerator.js -->
+<!-- Skapa en RGB-färgpalett när sidan laddas -->
+
+<body x-data="data" x-init="setPaletteRGB()">
+
+    <!-- Skapa färgpaletten innanför body-taggen -->
+
+    <div class="d-flex flex-column text-center h-100 gap-3 pt-5">
+
+        <!-- Rubrik -->
+        <h1>Färgpalett</h1>
+
+    </div>
+
+</body>
+
+</html>

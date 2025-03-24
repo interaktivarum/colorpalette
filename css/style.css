@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Funnel Sans&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Funnel Sans";
+    font-size: 16pt;
+}
+
+h1 {
+    font-weight: bold;
+}
