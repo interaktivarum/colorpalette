@@ -28,7 +28,7 @@
 <!-- Använd 'data' för tillgång variabler och funktioner i colorGenerator.js -->
 <!-- Skapa en RGB-färgpalett när sidan laddas -->
 
-<body x-data="data" x-init="setPaletteRGB()">
+<body x-data="colors" x-init="setPaletteRGB()">
 
     <!-- Skapa färgpaletten innanför body-taggen -->
 
@@ -37,6 +37,8 @@
 
         <!-- Rubrik -->
         <h1>Färgpalett</h1>
+
+        <div x-text="colors" />
 
     </div>
 
