@@ -23,7 +23,7 @@ document.addEventListener('alpine:init', () => {
             return chroma(color).set('hsl.h', '+' + degrees)
         },
 
-        printPalette() {
+        logPalette() {
             console.log("Färgpalett:", this.colors.toString())
         },
 
@@ -34,8 +34,8 @@ document.addEventListener('alpine:init', () => {
             this.colors[1] = '#00ff00'
             this.colors[2] = '#0000ff'
 
-            // Skriv ut färgpaletten
-            this.printPalette()
+            // Logga färgpaletten i konsollen
+            this.logPalette()
         },
 
         // Skapa en färgpalett med tre färger (triadic), baserat på den första färgen. 
@@ -45,7 +45,8 @@ document.addEventListener('alpine:init', () => {
             this.colors[1] = this.rotateHue(this.colors[0], step)
             this.colors[2] = this.rotateHue(this.colors[0], step * 2)
 
-            this.printPalette()
+            // Logga färgpaletten i konsollen
+            this.logPalette()
         }
 
     }))
